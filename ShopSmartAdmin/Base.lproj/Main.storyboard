@@ -1,25 +1,181 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="oA8-D9-Ddd">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShopSmartAdmin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ShopSmart Admin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qg8-SK-I8K">
+                                <rect key="frame" x="91" y="119" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VTQ-KD-PDZ">
+                                <rect key="frame" x="99" y="170" width="123" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Xu-Cq-fRD">
+                                <rect key="frame" x="99" y="208" width="123" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTY-XC-Fin">
+                                <rect key="frame" x="141" y="278" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uFP-Di-mkE"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Ay9-09-nXc"/>
+                    <connections>
+                        <outlet property="passwordField" destination="4Xu-Cq-fRD" id="ovo-Wn-zq0"/>
+                        <outlet property="usernameField" destination="VTQ-KD-PDZ" id="7Nv-Za-EFX"/>
+                        <segue destination="lyw-fv-bGY" kind="push" identifier="LoggedIn" id="7CS-cn-Jdx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="561" y="318"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="GWI-jN-H08">
+            <objects>
+                <viewController id="lyw-fv-bGY" customClass="HomeViewController" customModule="ShopSmartAdmin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0cJ-20-aUg"/>
+                        <viewControllerLayoutGuide type="bottom" id="GzU-aJ-wzt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bUg-gH-cwc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Manage the App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7v3-nT-rLU">
+                                <rect key="frame" x="97" y="119" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiK-XN-57d">
+                                <rect key="frame" x="109" y="208" width="102" height="30"/>
+                                <state key="normal" title="Manage Offers"/>
+                                <connections>
+                                    <segue destination="pMH-OA-aL8" kind="push" id="Sjh-vt-UE1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0R-zt-4QW">
+                                <rect key="frame" x="103" y="246" width="115" height="30"/>
+                                <state key="normal" title="Manage Sensors"/>
+                                <connections>
+                                    <segue destination="sOR-Hv-LzO" kind="push" id="4zv-d3-E5n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8a-CU-pBj">
+                                <rect key="frame" x="129" y="284" width="63" height="30"/>
+                                <state key="normal" title="Analytics"/>
+                                <connections>
+                                    <segue destination="eL1-M1-QJ9" kind="push" id="pQK-pg-Vxd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="N3u-LA-zLK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7BC-VY-adi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="990" y="318"/>
+        </scene>
+        <!--Manage Sensors View Controller-->
+        <scene sceneID="Mly-aL-udH">
+            <objects>
+                <viewController id="sOR-Hv-LzO" customClass="ManageSensorsViewController" customModule="ShopSmartAdmin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jcI-ua-uRE"/>
+                        <viewControllerLayoutGuide type="bottom" id="i71-ha-jXz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8nb-ni-5gN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dXK-eb-Mth"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TrC-1d-p6D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1501" y="770.99999999999989"/>
+        </scene>
+        <!--Analytics View Controller-->
+        <scene sceneID="Gaf-Bq-wy6">
+            <objects>
+                <viewController id="eL1-M1-QJ9" customClass="AnalyticsViewController" customModule="ShopSmartAdmin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UsB-kb-0YG"/>
+                        <viewControllerLayoutGuide type="bottom" id="GEb-EH-pnQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Nv-pe-DMk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CzJ-87-Eui"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M1k-jN-XSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="990" y="1039"/>
+        </scene>
+        <!--Manage Offers View Controller-->
+        <scene sceneID="qRx-Bu-HQM">
+            <objects>
+                <viewController id="pMH-OA-aL8" customClass="ManageOffersViewController" customModule="ShopSmartAdmin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tIN-fr-elK"/>
+                        <viewControllerLayoutGuide type="bottom" id="2B1-tV-Vfo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6bP-Bf-uvo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YC2-1E-gGl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zuQ-Ep-vxf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1501" y="135"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ybs-sm-HIF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oA8-D9-Ddd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ypi-Rv-Q1b">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="OHi-Iu-mhK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gl8-bH-eCv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="147" y="318.99999999999994"/>
         </scene>
     </scenes>
 </document>

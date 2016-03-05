@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ShopSmartAdmin
 //
-//  Created by Macintosh User on 3/2/16.
+//  Created by Jessie Deot on 3/2/16.
 //  Copyright © 2016 Group5. All rights reserved.
 //
 

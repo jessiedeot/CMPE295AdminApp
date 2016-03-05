@@ -14,6 +14,10 @@
 		3BC333E11C87BE29002CCC48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC333DF1C87BE29002CCC48 /* LaunchScreen.storyboard */; };
 		3BC333EC1C87BE29002CCC48 /* ShopSmartAdminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC333EB1C87BE29002CCC48 /* ShopSmartAdminTests.swift */; };
 		3BC333F71C87BE29002CCC48 /* ShopSmartAdminUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC333F61C87BE29002CCC48 /* ShopSmartAdminUITests.swift */; };
+		3BC3340F1C8B7B37002CCC48 /* ManageSensorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3340E1C8B7B37002CCC48 /* ManageSensorsViewController.swift */; };
+		3BC334111C8B7B5A002CCC48 /* ManageOffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC334101C8B7B5A002CCC48 /* ManageOffersViewController.swift */; };
+		3BC334131C8B7B88002CCC48 /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC334121C8B7B88002CCC48 /* AnalyticsViewController.swift */; };
+		3BC334151C8B7BBA002CCC48 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC334141C8B7BBA002CCC48 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		3BC333F21C87BE29002CCC48 /* ShopSmartAdminUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopSmartAdminUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC333F61C87BE29002CCC48 /* ShopSmartAdminUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopSmartAdminUITests.swift; sourceTree = "<group>"; };
 		3BC333F81C87BE29002CCC48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BC3340E1C8B7B37002CCC48 /* ManageSensorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageSensorsViewController.swift; sourceTree = "<group>"; };
+		3BC334101C8B7B5A002CCC48 /* ManageOffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageOffersViewController.swift; sourceTree = "<group>"; };
+		3BC334121C8B7B88002CCC48 /* AnalyticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsViewController.swift; sourceTree = "<group>"; };
+		3BC334141C8B7BBA002CCC48 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,10 @@
 			children = (
 				3BC333D61C87BE29002CCC48 /* AppDelegate.swift */,
 				3BC333D81C87BE29002CCC48 /* ViewController.swift */,
+				3BC334141C8B7BBA002CCC48 /* HomeViewController.swift */,
+				3BC3340E1C8B7B37002CCC48 /* ManageSensorsViewController.swift */,
+				3BC334101C8B7B5A002CCC48 /* ManageOffersViewController.swift */,
+				3BC334121C8B7B88002CCC48 /* AnalyticsViewController.swift */,
 				3BC333DA1C87BE29002CCC48 /* Main.storyboard */,
 				3BC333DD1C87BE29002CCC48 /* Assets.xcassets */,
 				3BC333DF1C87BE29002CCC48 /* LaunchScreen.storyboard */,
@@ -256,8 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BC334111C8B7B5A002CCC48 /* ManageOffersViewController.swift in Sources */,
+				3BC3340F1C8B7B37002CCC48 /* ManageSensorsViewController.swift in Sources */,
+				3BC334131C8B7B88002CCC48 /* AnalyticsViewController.swift in Sources */,
 				3BC333D91C87BE29002CCC48 /* ViewController.swift in Sources */,
 				3BC333D71C87BE29002CCC48 /* AppDelegate.swift in Sources */,
+				3BC334151C8B7BBA002CCC48 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +498,7 @@
 				3BC333FD1C87BE29002CCC48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BC333FE1C87BE29002CCC48 /* Build configuration list for PBXNativeTarget "ShopSmartAdminTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +507,7 @@
 				3BC334001C87BE29002CCC48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BC334011C87BE29002CCC48 /* Build configuration list for PBXNativeTarget "ShopSmartAdminUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +516,7 @@
 				3BC334031C87BE29002CCC48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
