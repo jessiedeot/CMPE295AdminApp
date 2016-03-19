@@ -68,20 +68,30 @@ class ManageSensorsViewController: UIViewController, UITableViewDataSource, UITa
     func loadData()
     {
         
-        let headers = ["Accept":"application/json"]
+        //   authenticate(user: "cmpe297-group5-shopsmart-c0f", password: "abb0580238d61d0abc69bf8e6204cfcb")
         
-        Alamofire.request(.GET, "https://cloud.estimote.com/v1/beacons", parameters: nil,  encoding: .JSON , headers:headers).authenticate(user: "cmpe297-group5-shopsmart-c0f", password: "abb0580238d61d0abc69bf8e6204cfcb")
-            .responseJSON {  response in
+  
+        
+        let user = "cmpe297-group5-shopsmart-c0f"
+        let password = "abb0580238d61d0abc69bf8e6204cfcb"
+        
+        let credentialData = "\(user):\(password)".dataUsingEncoding(NSUTF8StringEncoding)!
+        let base64Credentials = credentialData.base64EncodedStringWithOptions([])
+        
+        let headers = ["Authorization": "Basic \(base64Credentials)", "Accept":"application/json"]
+        
+        Alamofire.request(.GET, "https://cloud.estimote.com/v1/beacons", parameters: nil,  encoding: .JSON , headers:headers).responseJSON{  response in
               
-                /*switch response.result {
+               switch response.result {
                case .Success(let JSON):
+                    print(response)
                     self.populateData(JSON as! NSArray)
                     
                     
                 case .Failure(let error):
-                    print("Request failed with error: \(error)")*/
+                    print("Request failed with error: \(error)")
                     
-                    print(response)
+            }
                     
                 
         }
@@ -95,7 +105,12 @@ class ManageSensorsViewController: UIViewController, UITableViewDataSource, UITa
             // let jsonArray = response.result.value as! NSMutableArray
             for item in jsonData{
                 
-               // self.sensorArray.append(item[0] as! String)
+                let dict = item as! NSMutableDictionary
+                
+                // let url = dict["offer_img_url"] as? String
+                
+                let sensorItem = Sensor(data: dict)
+                self.sensorArray.append(sensorItem)
                 
                 
             }

@@ -118,7 +118,7 @@
                                 <rect key="frame" x="0.0" y="65" width="320" height="438"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="26" id="3eC-hn-vfD" customClass="SensorTableViewCell" customModule="ShopSmartAdmin" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="sensor_cell" rowHeight="26" id="3eC-hn-vfD" customClass="SensorTableViewCell" customModule="ShopSmartAdmin" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="320" height="26"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3eC-hn-vfD" id="gux-X4-rt3">
