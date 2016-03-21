@@ -164,7 +164,7 @@ class ManageSensorsViewController: UIViewController, UITableViewDataSource, UITa
             let dvc = segue.destinationViewController as! SensorDetailViewController
             
             
-         //   dvc.categoryName = category
+            dvc.sensor = sensor
         }
     }
     
