@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B61B3251CA1FC3F004DCE35 /* OfferTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B61B3241CA1FC3F004DCE35 /* OfferTableViewCell.swift */; };
+		3B61B32E1CA1FD57004DCE35 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B61B32D1CA1FD57004DCE35 /* Offer.swift */; };
+		3B61B3301CA20448004DCE35 /* OfferDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B61B32F1CA20448004DCE35 /* OfferDetailViewController.swift */; };
 		3BC333D71C87BE29002CCC48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC333D61C87BE29002CCC48 /* AppDelegate.swift */; };
 		3BC333D91C87BE29002CCC48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC333D81C87BE29002CCC48 /* ViewController.swift */; };
 		3BC333DC1C87BE29002CCC48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC333DA1C87BE29002CCC48 /* Main.storyboard */; };
@@ -120,6 +123,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B61B3241CA1FC3F004DCE35 /* OfferTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferTableViewCell.swift; sourceTree = "<group>"; };
+		3B61B32D1CA1FD57004DCE35 /* Offer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		3B61B32F1CA20448004DCE35 /* OfferDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferDetailViewController.swift; sourceTree = "<group>"; };
 		3BC333D31C87BE29002CCC48 /* ShopSmartAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopSmartAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC333D61C87BE29002CCC48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BC333D81C87BE29002CCC48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -236,6 +242,8 @@
 				3BC333E21C87BE29002CCC48 /* Info.plist */,
 				B11845B11C98B58D004A84F3 /* SensorTableViewCell.swift */,
 				B11846191C98BFA8004A84F3 /* SensorDetailViewController.swift */,
+				3B61B3241CA1FC3F004DCE35 /* OfferTableViewCell.swift */,
+				3B61B32F1CA20448004DCE35 /* OfferDetailViewController.swift */,
 			);
 			path = ShopSmartAdmin;
 			sourceTree = "<group>";
@@ -262,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				B11845B31C98B639004A84F3 /* Sensor.swift */,
+				3B61B32D1CA1FD57004DCE35 /* Offer.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -618,6 +627,7 @@
 				B11845B41C98B639004A84F3 /* Sensor.swift in Sources */,
 				B11845FC1C98B8F3004A84F3 /* ServerTrustPolicy.swift in Sources */,
 				B11845E91C98B8F3004A84F3 /* CONTRIBUTING.md in Sources */,
+				3B61B3251CA1FC3F004DCE35 /* OfferTableViewCell.swift in Sources */,
 				B11845FB1C98B8F3004A84F3 /* Result.swift in Sources */,
 				B11845FE1C98B8F3004A84F3 /* Timeline.swift in Sources */,
 				3BC3340F1C8B7B37002CCC48 /* ManageSensorsViewController.swift in Sources */,
@@ -627,6 +637,7 @@
 				B11845EE1C98B8F3004A84F3 /* Alamofire.swift in Sources */,
 				3BC334131C8B7B88002CCC48 /* AnalyticsViewController.swift in Sources */,
 				3BC333D91C87BE29002CCC48 /* ViewController.swift in Sources */,
+				3B61B32E1CA1FD57004DCE35 /* Offer.swift in Sources */,
 				B11845EF1C98B8F3004A84F3 /* Download.swift in Sources */,
 				B11845FF1C98B8F3004A84F3 /* Upload.swift in Sources */,
 				B11845FD1C98B8F3004A84F3 /* Stream.swift in Sources */,
@@ -640,6 +651,7 @@
 				B11845F91C98B8F3004A84F3 /* Response.swift in Sources */,
 				B11845F51C98B8F3004A84F3 /* NetworkReachabilityManager.swift in Sources */,
 				B11846001C98B8F3004A84F3 /* Validation.swift in Sources */,
+				3B61B3301CA20448004DCE35 /* OfferDetailViewController.swift in Sources */,
 				B11845F31C98B8F3004A84F3 /* Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
