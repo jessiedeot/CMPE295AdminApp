@@ -122,7 +122,7 @@
                                         <rect key="frame" x="0.0" y="92" width="320" height="26"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3eC-hn-vfD" id="gux-X4-rt3">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="25"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="25.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05H-Wg-2o2">
@@ -154,7 +154,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TrC-1d-p6D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="990" y="1119"/>
+            <point key="canvasLocation" x="1466" y="1067"/>
         </scene>
         <!--Sensor Detail View Controller-->
         <scene sceneID="Qyg-Kw-qZg">
@@ -340,7 +340,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CJD-Z0-mxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1405" y="1119"/>
+            <point key="canvasLocation" x="1852" y="1059"/>
         </scene>
         <!--Analytics View Controller-->
         <scene sceneID="Gaf-Bq-wy6">
@@ -359,7 +359,83 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M1k-jN-XSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="622" y="1119"/>
+            <point key="canvasLocation" x="27" y="1059"/>
+        </scene>
+        <!--Shelf Suggestions-->
+        <scene sceneID="T7e-3n-VGk">
+            <objects>
+                <viewController id="exT-A7-aSp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="64V-Cr-Hm8"/>
+                        <viewControllerLayoutGuide type="bottom" id="cds-NJ-frl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t4V-HO-sv5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Shelf Suggestions" id="uTI-rl-er1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BvF-QG-4Si" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-440" y="1415"/>
+        </scene>
+        <!--Next in Basket-->
+        <scene sceneID="TBR-Bn-DaN">
+            <objects>
+                <viewController id="Kem-qG-XPL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bsa-Sg-VjQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z1B-vE-Uav"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GVd-lT-Ia5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Next in Basket" id="pau-21-jwg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w2i-BO-obT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-775" y="1415"/>
+        </scene>
+        <!--Frequently Purchased-->
+        <scene sceneID="x4P-Dd-yvD">
+            <objects>
+                <viewController id="vJw-h0-jDT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="flL-v4-GP3"/>
+                        <viewControllerLayoutGuide type="bottom" id="cqc-Ey-abS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Eky-2W-qcO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Frequently Purchased" id="Ps3-mk-kZI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gdJ-I7-PFR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1108" y="1415"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Fw7-2X-IbY">
+            <objects>
+                <tabBarController id="L6N-9r-wMc" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="1OM-9H-fjU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vJw-h0-jDT" kind="relationship" relationship="viewControllers" id="Vc1-0L-C0n"/>
+                        <segue destination="Kem-qG-XPL" kind="relationship" relationship="viewControllers" id="Xjs-Iy-VBw"/>
+                        <segue destination="exT-A7-aSp" kind="relationship" relationship="viewControllers" id="xr5-89-6ew"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3y5-ZD-luO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-775" y="669"/>
         </scene>
         <!--Offer List-->
         <scene sceneID="qRx-Bu-HQM">
@@ -381,13 +457,13 @@
                                         <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DwD-0r-RJp" id="vPG-jb-4bt">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5U6-Ad-JNa">
                                                     <rect key="frame" x="17" y="11" width="221" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -409,7 +485,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zuQ-Ep-vxf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1437" y="318"/>
+            <point key="canvasLocation" x="1367" y="318"/>
         </scene>
         <!--Offer Detail-->
         <scene sceneID="TXk-yl-7cv">
@@ -441,7 +517,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Expiry:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ib6-yc-v9u">
                                 <rect key="frame" x="20" y="441" width="52" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QWg-a5-F4g">
@@ -466,7 +542,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bA3-yj-qX2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1852" y="318"/>
+            <point key="canvasLocation" x="1752" y="318"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ybs-sm-HIF">
