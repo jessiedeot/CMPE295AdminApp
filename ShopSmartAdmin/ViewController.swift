@@ -43,6 +43,23 @@ class ViewController: UIViewController {
             let request = NSMutableURLRequest(URL:endpoint)
             NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) -> Void in
                 do {
+                    
+                    var csrftoken : String = ""
+                    
+                    if let httpResponse = response as? NSHTTPURLResponse, let fields = httpResponse.allHeaderFields as? [String : String]
+                    {
+                        let cookies = NSHTTPCookie.cookiesWithResponseHeaderFields(fields, forURL: response!.URL!)
+                        NSHTTPCookieStorage.sharedHTTPCookieStorage().setCookies(cookies, forURL: response!.URL!, mainDocumentURL: nil)
+                        
+                        for cookie in cookies {
+                            
+                            if(cookie.name == "csrftoken"){
+                                
+                                csrftoken = cookie.value
+                            }
+                        }
+                    }
+                    
                     guard let dat = data else { throw JSONError.NoData }
                     guard let json = try NSJSONSerialization.JSONObjectWithData(dat, options: []) as? NSDictionary else { throw JSONError.ConversionFailed }
                     //print(json["id"] as! Int)
@@ -56,6 +73,10 @@ class ViewController: UIViewController {
                         
                         dispatch_async(dispatch_get_main_queue(), {
                             
+                            print("CS" + csrftoken)
+                            let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+                            prefs.setObject(csrftoken, forKey: "csrftoken")
+                            prefs.synchronize()
                             self.performSegueWithIdentifier("LoggedIn", sender: nil)
                         })
                         

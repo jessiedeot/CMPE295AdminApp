@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class OfferDetailViewController: UIViewController {
 
@@ -36,6 +37,29 @@ class OfferDetailViewController: UIViewController {
             
         }
     }
+    
+    @IBAction func UpdateButton(sender: UIButton) {
+        
+        let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        let csrftoken = prefs.objectForKey("csrftoken") as! String
+        print(csrftoken)
+        let headers = ["X-CSRFToken" : csrftoken]
+        Alamofire.request(.PUT, "http://127.0.0.1:8000/smartretailapp/api/updateoffer/?offer_id=0&offer_end_date=2016-03-23/", headers: headers)
+            .validate()
+            .responseJSON {  response in
+                switch response.result {
+                case .Success:
+                    print("Update Successful")
+                    
+                case .Failure(let error):
+                    print("Request failed with error: \(error)")
+                    
+                }
+        }
+
+        
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
