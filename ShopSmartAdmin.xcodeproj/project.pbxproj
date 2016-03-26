@@ -54,6 +54,7 @@
 		B11846001C98B8F3004A84F3 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11845DC1C98B8F2004A84F3 /* Validation.swift */; };
 		B11846181C98B917004A84F3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11846091C98B8F3004A84F3 /* Alamofire.framework */; };
 		B118461A1C98BFA8004A84F3 /* SensorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11846191C98BFA8004A84F3 /* SensorDetailViewController.swift */; };
+		FB72E85E1CA6F2440091BE62 /* FPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72E85D1CA6F2440091BE62 /* FPViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,6 +178,7 @@
 		B11845DB1C98B8F2004A84F3 /* Upload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Upload.swift; sourceTree = "<group>"; };
 		B11845DC1C98B8F2004A84F3 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		B11846191C98BFA8004A84F3 /* SensorDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorDetailViewController.swift; sourceTree = "<group>"; };
+		FB72E85D1CA6F2440091BE62 /* FPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 				3BC3340E1C8B7B37002CCC48 /* ManageSensorsViewController.swift */,
 				3BC334101C8B7B5A002CCC48 /* ManageOffersViewController.swift */,
 				3BC334121C8B7B88002CCC48 /* AnalyticsViewController.swift */,
+				FB72E85D1CA6F2440091BE62 /* FPViewController.swift */,
 				3BC333DA1C87BE29002CCC48 /* Main.storyboard */,
 				3BC333DD1C87BE29002CCC48 /* Assets.xcassets */,
 				3BC333DF1C87BE29002CCC48 /* LaunchScreen.storyboard */,
@@ -630,6 +633,7 @@
 				3B61B3251CA1FC3F004DCE35 /* OfferTableViewCell.swift in Sources */,
 				B11845FB1C98B8F3004A84F3 /* Result.swift in Sources */,
 				B11845FE1C98B8F3004A84F3 /* Timeline.swift in Sources */,
+				FB72E85E1CA6F2440091BE62 /* FPViewController.swift in Sources */,
 				3BC3340F1C8B7B37002CCC48 /* ManageSensorsViewController.swift in Sources */,
 				B11845ED1C98B8F3004A84F3 /* README.md in Sources */,
 				B11845F41C98B8F3004A84F3 /* MultipartFormData.swift in Sources */,
