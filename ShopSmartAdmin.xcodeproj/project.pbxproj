@@ -54,6 +54,8 @@
 		B11846001C98B8F3004A84F3 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11845DC1C98B8F2004A84F3 /* Validation.swift */; };
 		B11846181C98B917004A84F3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11846091C98B8F3004A84F3 /* Alamofire.framework */; };
 		B118461A1C98BFA8004A84F3 /* SensorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11846191C98BFA8004A84F3 /* SensorDetailViewController.swift */; };
+		FB5164C51CAA443700EEB34B /* SSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5164C41CAA443700EEB34B /* SSViewController.swift */; };
+		FB5164C71CAA49AF00EEB34B /* SSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5164C61CAA49AF00EEB34B /* SSTableViewCell.swift */; };
 		FB72E85E1CA6F2440091BE62 /* FPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72E85D1CA6F2440091BE62 /* FPViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -178,6 +180,8 @@
 		B11845DB1C98B8F2004A84F3 /* Upload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Upload.swift; sourceTree = "<group>"; };
 		B11845DC1C98B8F2004A84F3 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		B11846191C98BFA8004A84F3 /* SensorDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorDetailViewController.swift; sourceTree = "<group>"; };
+		FB5164C41CAA443700EEB34B /* SSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SSViewController.swift; path = ../SSViewController.swift; sourceTree = "<group>"; };
+		FB5164C61CAA49AF00EEB34B /* SSTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSTableViewCell.swift; sourceTree = "<group>"; };
 		FB72E85D1CA6F2440091BE62 /* FPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -239,6 +243,7 @@
 				3BC334101C8B7B5A002CCC48 /* ManageOffersViewController.swift */,
 				3BC334121C8B7B88002CCC48 /* AnalyticsViewController.swift */,
 				FB72E85D1CA6F2440091BE62 /* FPViewController.swift */,
+				FB5164C41CAA443700EEB34B /* SSViewController.swift */,
 				3BC333DA1C87BE29002CCC48 /* Main.storyboard */,
 				3BC333DD1C87BE29002CCC48 /* Assets.xcassets */,
 				3BC333DF1C87BE29002CCC48 /* LaunchScreen.storyboard */,
@@ -247,6 +252,7 @@
 				B11846191C98BFA8004A84F3 /* SensorDetailViewController.swift */,
 				3B61B3241CA1FC3F004DCE35 /* OfferTableViewCell.swift */,
 				3B61B32F1CA20448004DCE35 /* OfferDetailViewController.swift */,
+				FB5164C61CAA49AF00EEB34B /* SSTableViewCell.swift */,
 			);
 			path = ShopSmartAdmin;
 			sourceTree = "<group>";
@@ -650,12 +656,14 @@
 				3BC333D71C87BE29002CCC48 /* AppDelegate.swift in Sources */,
 				B11845B21C98B58D004A84F3 /* SensorTableViewCell.swift in Sources */,
 				B11845E81C98B8F3004A84F3 /* CHANGELOG.md in Sources */,
+				FB5164C71CAA49AF00EEB34B /* SSTableViewCell.swift in Sources */,
 				B11845FA1C98B8F3004A84F3 /* ResponseSerialization.swift in Sources */,
 				3BC334151C8B7BBA002CCC48 /* HomeViewController.swift in Sources */,
 				B11845F91C98B8F3004A84F3 /* Response.swift in Sources */,
 				B11845F51C98B8F3004A84F3 /* NetworkReachabilityManager.swift in Sources */,
 				B11846001C98B8F3004A84F3 /* Validation.swift in Sources */,
 				3B61B3301CA20448004DCE35 /* OfferDetailViewController.swift in Sources */,
+				FB5164C51CAA443700EEB34B /* SSViewController.swift in Sources */,
 				B11845F31C98B8F3004A84F3 /* Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
