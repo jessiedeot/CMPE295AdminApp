@@ -40,16 +40,25 @@ class OfferDetailViewController: UIViewController {
     
     @IBAction func UpdateButton(sender: UIButton) {
         
+        let params = ["offer_id":offer.offerId!, "offer_end_date":offerEndDate.text!] as Dictionary<String, AnyObject>
+        print(params)
         let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
         let csrftoken = prefs.objectForKey("csrftoken") as! String
         print(csrftoken)
         let headers = ["X-CSRFToken" : csrftoken]
-        Alamofire.request(.PUT, "http://127.0.0.1:8000/smartretailapp/api/updateoffer/?offer_id=0&offer_end_date=2016-03-23/", headers: headers)
+        Alamofire.request(.PUT, "http://127.0.0.1:8000/smartretailapp/api/offer/\(offer.offerId!)",parameters: params,  encoding: .JSON , headers:headers)
             .validate()
             .responseJSON {  response in
                 switch response.result {
                 case .Success:
                     print("Update Successful")
+                    let alert = UIAlertController(title: "Success!", message:"Offer has been updated successfully", preferredStyle: .Alert)
+                    let action = UIAlertAction(title: "OK", style: .Default) { _ in}
+                    alert.addAction(action)
+                    dispatch_async(dispatch_get_main_queue(), {
+                        self.presentViewController(alert, animated: true){}
+                    })
+
                     
                 case .Failure(let error):
                     print("Request failed with error: \(error)")
