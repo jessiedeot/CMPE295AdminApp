@@ -99,7 +99,11 @@ class ShelfViewController: UIViewController,UITableViewDataSource, UITableViewDe
     
     func loadData() {
         
-        let url="http://127.0.0.1:8000/smartretailapp/api/shelfsugglist/?"
+        
+        let url="\(Constant.baseURL)/smartretailapp/api/shelfsugglist/?"
+        
+        // \(Constant.baseURL)
+        // let url="http://127.0.0.1:8000/smartretailapp/api/shelfsugglist/?"
         
         let modUrl = url.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
         

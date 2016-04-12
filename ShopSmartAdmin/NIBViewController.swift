@@ -56,12 +56,12 @@ class NIBViewController: UIViewController {
 
     func loadData() {
         
-        //let url="http://127.0.0.1:8000/smartretailapp/api/shelfsugglist/?"
-        
         // let url="http://127.0.0.1:8000/smartretailapp/api/nextinbasket/?cust=&productName="
         
         
-        let urlPath = "http://127.0.0.1:8000/smartretailapp/api/nextinbasket/?cust=\(nibCustId.text!)&productName=\(nibProd.text!)"
+        let urlPath = "\(Constant.baseURL)/smartretailapp/api/nextinbasket/?cust=\(nibCustId.text!)&productName=\(nibProd.text!)"
+        
+  //      let urlPath = "http://127.0.0.1:8000/smartretailapp/api/nextinbasket/?cust=\(nibCustId.text!)&productName=\(nibProd.text!)"
         
         print(urlPath)
 

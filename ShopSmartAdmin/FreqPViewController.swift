@@ -51,7 +51,11 @@ class FreqPViewController: UIViewController {
     func loadData() {
         
         
-        let urlPath = "http://127.0.0.1:8000/smartretailapp/api/freqpurcust/?cust=\(fpCustId.text!)"
+         let urlPath = "\(Constant.baseURL)/smartretailapp/api/freqpurcust/?cust=\(fpCustId.text!)"
+        
+        //let urlPath = "http://127.0.0.1:8000/smartretailapp/api/freqpurcust/?cust=\(fpCustId.text!)"
+        // http://127.0.0.1:8000/ to be replaced with "\(Constant.baseURL)/"
+        // let url="\(Constant.baseURL)/smartretailapp/api/subcategory/?dept=" + categoryName
         
         print(urlPath)
         

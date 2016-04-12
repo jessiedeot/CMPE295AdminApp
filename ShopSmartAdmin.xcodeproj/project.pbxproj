@@ -54,6 +54,7 @@
 		B11846001C98B8F3004A84F3 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11845DC1C98B8F2004A84F3 /* Validation.swift */; };
 		B11846181C98B917004A84F3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11846091C98B8F3004A84F3 /* Alamofire.framework */; };
 		B118461A1C98BFA8004A84F3 /* SensorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11846191C98BFA8004A84F3 /* SensorDetailViewController.swift */; };
+		FB06FD061CBC7C5C00A77FF5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB06FD051CBC7C5C00A77FF5 /* Constant.swift */; };
 		FB5164C71CAA49AF00EEB34B /* SSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5164C61CAA49AF00EEB34B /* SSTableViewCell.swift */; };
 		FB8AD86A1CB096A40035BB37 /* FreqPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8AD8691CB096A40035BB37 /* FreqPViewController.swift */; };
 		FBC37FBD1CACD0EF00A640A3 /* NIBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC37FBC1CACD0EF00A640A3 /* NIBViewController.swift */; };
@@ -181,6 +182,7 @@
 		B11845DB1C98B8F2004A84F3 /* Upload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Upload.swift; sourceTree = "<group>"; };
 		B11845DC1C98B8F2004A84F3 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		B11846191C98BFA8004A84F3 /* SensorDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorDetailViewController.swift; sourceTree = "<group>"; };
+		FB06FD051CBC7C5C00A77FF5 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		FB5164C61CAA49AF00EEB34B /* SSTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSTableViewCell.swift; sourceTree = "<group>"; };
 		FB8AD8691CB096A40035BB37 /* FreqPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreqPViewController.swift; sourceTree = "<group>"; };
 		FBC37FBC1CACD0EF00A640A3 /* NIBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NIBViewController.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 			children = (
 				B11845B31C98B639004A84F3 /* Sensor.swift */,
 				3B61B32D1CA1FD57004DCE35 /* Offer.swift */,
+				FB06FD051CBC7C5C00A77FF5 /* Constant.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -666,6 +669,7 @@
 				3BC334151C8B7BBA002CCC48 /* HomeViewController.swift in Sources */,
 				B11845F91C98B8F3004A84F3 /* Response.swift in Sources */,
 				B11845F51C98B8F3004A84F3 /* NetworkReachabilityManager.swift in Sources */,
+				FB06FD061CBC7C5C00A77FF5 /* Constant.swift in Sources */,
 				B11846001C98B8F3004A84F3 /* Validation.swift in Sources */,
 				3B61B3301CA20448004DCE35 /* OfferDetailViewController.swift in Sources */,
 				B11845F31C98B8F3004A84F3 /* Manager.swift in Sources */,
