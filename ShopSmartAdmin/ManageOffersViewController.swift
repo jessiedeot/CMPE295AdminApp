@@ -23,7 +23,7 @@ class ManageOffersViewController: UIViewController, UITableViewDataSource, UITab
         self.offerTableView.delegate=self
         self.offerTableView.dataSource=self
         
-        Alamofire.request(.GET, "http://54.153.9.205:8000/smartretailapp/api/offer/?format=json")
+        Alamofire.request(.GET, "\(Constant.baseURL)/smartretailapp/api/offer/?format=json")
             .responseJSON {  response in
                 switch response.result {
                 case .Success(let JSON):

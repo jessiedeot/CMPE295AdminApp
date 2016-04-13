@@ -46,7 +46,7 @@ class OfferDetailViewController: UIViewController {
         let csrftoken = prefs.objectForKey("csrftoken") as! String
         print(csrftoken)
         let headers = ["X-CSRFToken" : csrftoken]
-        Alamofire.request(.PUT, "http://127.0.0.1:8000/smartretailapp/api/offer/\(offer.offerId!)",parameters: params,  encoding: .JSON , headers:headers)
+        Alamofire.request(.PUT, "\(Constant.baseURL)/smartretailapp/api/offer/\(offer.offerId!)",parameters: params,  encoding: .JSON , headers:headers)
             .validate()
             .responseJSON {  response in
                 switch response.result {
