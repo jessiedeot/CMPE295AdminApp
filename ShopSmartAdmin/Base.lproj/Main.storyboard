@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="oA8-D9-Ddd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="oA8-D9-Ddd">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -135,7 +135,7 @@
             </objects>
             <point key="canvasLocation" x="970" y="318"/>
         </scene>
-        <!--Manage Sensors View Controller-->
+        <!--Sensors-->
         <scene sceneID="Mly-aL-udH">
             <objects>
                 <viewController id="sOR-Hv-LzO" customClass="ManageSensorsViewController" customModule="ShopSmartAdmin" customModuleProvider="target" sceneMemberID="viewController">
@@ -147,24 +147,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="26" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZGy-Rt-ltZ">
-                                <rect key="frame" x="0.0" y="65" width="320" height="438"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZGy-Rt-ltZ">
+                                <rect key="frame" x="0.0" y="56" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="sensor_cell" rowHeight="26" id="3eC-hn-vfD" customClass="SensorTableViewCell" customModule="ShopSmartAdmin" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="26"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="sensor_cell" rowHeight="69" id="3eC-hn-vfD" customClass="SensorTableViewCell" customModule="ShopSmartAdmin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="69"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3eC-hn-vfD" id="gux-X4-rt3">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="26"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="68.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05H-Wg-2o2">
-                                                    <rect key="frame" x="16" y="3" width="288" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05H-Wg-2o2">
+                                                    <rect key="frame" x="26" y="-39" width="211" height="107"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="05H-Wg-2o2" firstAttribute="top" secondItem="gux-X4-rt3" secondAttribute="topMargin" constant="-47" id="255-6g-Vnm"/>
+                                                <constraint firstItem="05H-Wg-2o2" firstAttribute="leading" secondItem="gux-X4-rt3" secondAttribute="leadingMargin" constant="18" id="4FL-D5-vZj"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="05H-Wg-2o2" secondAttribute="bottom" constant="-7.5" id="QTf-tv-ffF"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="05H-Wg-2o2" secondAttribute="trailing" constant="42" id="SQq-Ga-A11"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="mylabel" destination="05H-Wg-2o2" id="OBq-y1-Uvo"/>
@@ -179,8 +185,14 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZGy-Rt-ltZ" firstAttribute="leading" secondItem="8nb-ni-5gN" secondAttribute="leading" id="9kL-KV-169"/>
+                            <constraint firstItem="ZGy-Rt-ltZ" firstAttribute="top" secondItem="8nb-ni-5gN" secondAttribute="topMargin" constant="56" id="SWU-c3-WQu"/>
+                            <constraint firstItem="i71-ha-jXz" firstAttribute="top" secondItem="ZGy-Rt-ltZ" secondAttribute="bottom" constant="8" symbolic="YES" id="ZNI-7a-cfl"/>
+                            <constraint firstAttribute="trailing" secondItem="ZGy-Rt-ltZ" secondAttribute="trailing" id="dkt-DN-D1C"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="dXK-eb-Mth"/>
+                    <navigationItem key="navigationItem" title="Sensors" id="dXK-eb-Mth"/>
                     <connections>
                         <outlet property="tblView" destination="ZGy-Rt-ltZ" id="KWW-j2-uyh"/>
                     </connections>
@@ -189,7 +201,7 @@
             </objects>
             <point key="canvasLocation" x="1373" y="1065"/>
         </scene>
-        <!--Sensor Detail View Controller-->
+        <!--Sensor Information-->
         <scene sceneID="Qyg-Kw-qZg">
             <objects>
                 <viewController id="err-D3-m46" customClass="SensorDetailViewController" customModule="ShopSmartAdmin" customModuleProvider="target" sceneMemberID="viewController">
@@ -201,7 +213,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6AI-oK-8RL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6AI-oK-8RL">
                                 <rect key="frame" x="20" y="116" width="45" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -306,12 +318,6 @@
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sensor Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bb-AD-fce">
-                                <rect key="frame" x="20" y="78" width="270" height="21"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Life Expectancy in Days" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyt-1l-1wR">
                                 <rect key="frame" x="17" y="456" width="135" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -358,7 +364,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="3ZR-nC-IYY"/>
+                    <navigationItem key="navigationItem" title="Sensor Information" id="3ZR-nC-IYY"/>
                     <connections>
                         <outlet property="basicPwr" destination="FTd-gq-QSJ" id="4rQ-Ke-hPJ"/>
                         <outlet property="lifeDays" destination="ZiG-yp-0mz" id="MEW-MB-R4z"/>
@@ -395,7 +401,7 @@
                                         <rect key="frame" x="0.0" y="92" width="307" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ib9-15-AKx" id="BcE-g6-lJX">
-                                            <rect key="frame" x="0.0" y="0.0" width="307" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="307" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WD5-ug-uYc">
@@ -605,7 +611,7 @@
                                         <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DwD-0r-RJp" id="vPG-jb-4bt">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5U6-Ad-JNa">
