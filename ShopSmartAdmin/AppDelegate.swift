@@ -19,7 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //       purple  UINavigationBar.appearance().barTintColor = UIColor(red: 63.0/255.0, green: 81.0/255.0, blue: 181.0/255.0, alpha: 1.0)  // 3F51B5
   
-        UINavigationBar.appearance().barTintColor = UIColor(red: 105.0/255.0, green: 26.0/255.0, blue: 153.0/255.0, alpha: 1.0) // #691A99
+//        UINavigationBar.appearance().barTintColor = UIColor(red: 105.0/255.0, green: 26.0/255.0, blue: 153.0/255.0, alpha: 1.0) // #691A99
+        
+        UINavigationBar.appearance().barTintColor = UIColor(red: 255.0/255.0, green: 59.0/255.0, blue: 48.0/255.0, alpha: 1.0) // #FF3B30  red color
         
         
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
