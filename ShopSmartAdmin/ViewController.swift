@@ -120,11 +120,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    //Calls this function when the tap is recognized.
-    func dismissKeyboard() {
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
-        view.endEditing(true)
-    }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         self.view.endEditing(true)

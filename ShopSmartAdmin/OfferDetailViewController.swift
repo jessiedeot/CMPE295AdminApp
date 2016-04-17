@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class OfferDetailViewController: UIViewController {
+class OfferDetailViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var offerTitle: UILabel!
     @IBOutlet weak var offerImage: UIImageView!
@@ -20,7 +20,7 @@ class OfferDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.offerEndDate.delegate = self;
         // Do any additional setup after loading the view.
         
         let url = NSURL(string: "\(offer.offerImgUrl)")
@@ -105,7 +105,14 @@ class OfferDetailViewController: UIViewController {
         
     }
     
-
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

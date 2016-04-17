@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class NIBViewController: UIViewController {
+class NIBViewController: UIViewController, UITextFieldDelegate {
 
     var recoText: String = ""
     
@@ -30,6 +30,8 @@ class NIBViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.nibCustId.delegate = self;
+        self.nibProd.delegate = self;
         
         // for setting the border for UITextView
         
@@ -47,6 +49,11 @@ class NIBViewController: UIViewController {
         
        // loadData()
         
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     override func didReceiveMemoryWarning() {

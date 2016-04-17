@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class SensorDetailViewController: UIViewController {
+class SensorDetailViewController: UIViewController, UITextFieldDelegate {
     
     var sensor : Sensor!
     
@@ -26,10 +26,17 @@ class SensorDetailViewController: UIViewController {
     @IBOutlet var lifeDays: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.power.delegate = self;
+        self.basicPwr.delegate = self;
+        self.smartPwr.delegate = self;
         populateData()
         
         // Do any additional setup after loading the view.
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     override func didReceiveMemoryWarning() {

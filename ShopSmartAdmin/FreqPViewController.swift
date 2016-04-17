@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class FreqPViewController: UIViewController {
+class FreqPViewController: UIViewController, UITextFieldDelegate {
     
     var freqpurcText: String = ""
     
@@ -30,6 +30,8 @@ class FreqPViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.fpCustId.delegate = self;
+        
         // for setting the border for UITextView 
         
         // let borderColor : UIColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0)
@@ -43,6 +45,10 @@ class FreqPViewController: UIViewController {
         
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
