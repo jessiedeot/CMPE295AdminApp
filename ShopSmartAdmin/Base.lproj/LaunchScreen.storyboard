@@ -28,12 +28,11 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (C) Spring 2016 Group5. All rights reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7L-UI-3Rl">
-                                <rect key="frame" x="160" y="545" width="280" height="25"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="oFm-pU-wal"/>
-                                    <constraint firstAttribute="width" constant="280" id="p0Y-8D-dCy"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="40" y="211" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Copyright (C) Spring 2016 Group5. All rights reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7L-UI-3Rl">
+                                <rect key="frame" x="20" y="518" width="280" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -48,11 +47,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0Ig-4r-FI7" firstAttribute="centerX" secondItem="6d3-Zc-iNz" secondAttribute="centerX" id="BtJ-00-dZ3"/>
+                         
                             <constraint firstItem="i7L-UI-3Rl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="F7r-eu-ueC"/>
                             <constraint firstItem="0Ig-4r-FI7" firstAttribute="centerX" secondItem="i7L-UI-3Rl" secondAttribute="centerX" id="UA1-CP-tD7"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="i7L-UI-3Rl" secondAttribute="bottom" constant="30" id="b3W-ec-e5p"/>
-                            <constraint firstItem="6d3-Zc-iNz" firstAttribute="top" secondItem="0Ig-4r-FI7" secondAttribute="bottom" constant="60" id="mtg-KF-Xlp"/>
+                          
                             <constraint firstItem="0Ig-4r-FI7" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="79" id="yI8-Q6-7QE"/>
                         </constraints>
                     </view>
