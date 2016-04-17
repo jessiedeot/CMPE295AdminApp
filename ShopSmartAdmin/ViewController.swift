@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet weak var usernameField: UITextField!
@@ -112,6 +112,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.usernameField.delegate = self;
+        self.passwordField.delegate = self;
+        
         //let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         //view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view, typically from a nib.
@@ -121,6 +124,11 @@ class ViewController: UIViewController {
     func dismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
 
     override func didReceiveMemoryWarning() {
