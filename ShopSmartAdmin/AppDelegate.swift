@@ -21,7 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
 //        UINavigationBar.appearance().barTintColor = UIColor(red: 105.0/255.0, green: 26.0/255.0, blue: 153.0/255.0, alpha: 1.0) // #691A99
         
-        UINavigationBar.appearance().barTintColor = UIColor(red: 255.0/255.0, green: 59.0/255.0, blue: 48.0/255.0, alpha: 1.0) // #FF3B30  red color
+      //  UINavigationBar.appearance().barTintColor = UIColor(red: 255.0/255.0, green: 59.0/255.0, blue: 48.0/255.0, alpha: 1.0) // #FF3B30  red color
+        
+        UINavigationBar.appearance().barTintColor = UIColor(red: 213.0/255.0, green: 83.0/255.0, blue: 50.0/255.0, alpha: 1.0) // #D55332  final red color
         
         UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
         
