@@ -40,6 +40,41 @@ class OfferDetailViewController: UIViewController {
     
     @IBAction func UpdateButton(sender: UIButton) {
         
+        let currentDate = NSDate()
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let todaysDate = dateFormatter.stringFromDate(currentDate)
+        
+        //let offer_end_date = "2016-04-27"
+        
+        switch todaysDate.compare(offerEndDate.text!) {
+            
+        case .OrderedAscending:
+            print("todaysDate is earlier than offer_end_date")
+            self.updateOffer()
+            
+        case .OrderedDescending:
+            print("todaysDate is later than offer_end_date")
+            let alert = UIAlertController(title: "Failed!", message:"Please enter a future date", preferredStyle: .Alert)
+            let action = UIAlertAction(title: "OK", style: .Default) { _ in}
+            alert.addAction(action)
+            self.presentViewController(alert, animated: true){}
+            
+            
+        case .OrderedSame:
+            print("The two dates are the same")
+            let alert = UIAlertController(title: "Failed!", message:"Please enter a future date", preferredStyle: .Alert)
+            let action = UIAlertAction(title: "OK", style: .Default) { _ in}
+            alert.addAction(action)
+            self.presentViewController(alert, animated: true){}
+        }
+
+        
+        
+    }
+    
+    func updateOffer(){
+        
         let params = ["offer_id":offer.offerId!, "offer_end_date":offerEndDate.text!] as Dictionary<String, AnyObject>
         print(params)
         let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
@@ -58,13 +93,14 @@ class OfferDetailViewController: UIViewController {
                     dispatch_async(dispatch_get_main_queue(), {
                         self.presentViewController(alert, animated: true){}
                     })
-
+                    
                     
                 case .Failure(let error):
                     print("Request failed with error: \(error)")
                     
                 }
         }
+        
 
         
     }
