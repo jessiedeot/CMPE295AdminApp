@@ -54,6 +54,8 @@
 		B11846001C98B8F3004A84F3 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11845DC1C98B8F2004A84F3 /* Validation.swift */; };
 		B11846181C98B917004A84F3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11846091C98B8F3004A84F3 /* Alamofire.framework */; };
 		B118461A1C98BFA8004A84F3 /* SensorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11846191C98BFA8004A84F3 /* SensorDetailViewController.swift */; };
+		B17FED9B1CC3FA24007D6D1B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11846091C98B8F3004A84F3 /* Alamofire.framework */; };
+		B17FED9C1CC3FA24007D6D1B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B11846091C98B8F3004A84F3 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FB06FD061CBC7C5C00A77FF5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB06FD051CBC7C5C00A77FF5 /* Constant.swift */; };
 		FB5164C71CAA49AF00EEB34B /* SSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5164C61CAA49AF00EEB34B /* SSTableViewCell.swift */; };
 		FB8AD86A1CB096A40035BB37 /* FreqPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8AD8691CB096A40035BB37 /* FreqPViewController.swift */; };
@@ -125,7 +127,28 @@
 			remoteGlobalIDString = E4202FE01B667AA100C997FB;
 			remoteInfo = "Alamofire watchOS";
 		};
+		B17FED9D1CC3FA24007D6D1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B11845BA1C98B8F2004A84F3 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B17FED9F1CC3FA24007D6D1B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B17FED9C1CC3FA24007D6D1B /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3B61B3241CA1FC3F004DCE35 /* OfferTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferTableViewCell.swift; sourceTree = "<group>"; };
@@ -195,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B11846181C98B917004A84F3 /* Alamofire.framework in Frameworks */,
+				B17FED9B1CC3FA24007D6D1B /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,10 +472,12 @@
 				3BC333CF1C87BE29002CCC48 /* Sources */,
 				3BC333D01C87BE29002CCC48 /* Frameworks */,
 				3BC333D11C87BE29002CCC48 /* Resources */,
+				B17FED9F1CC3FA24007D6D1B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B17FED9E1CC3FA24007D6D1B /* PBXTargetDependency */,
 			);
 			name = ShopSmartAdmin;
 			productName = ShopSmartAdmin;
@@ -705,6 +731,11 @@
 			target = 3BC333D21C87BE29002CCC48 /* ShopSmartAdmin */;
 			targetProxy = 3BC333F31C87BE29002CCC48 /* PBXContainerItemProxy */;
 		};
+		B17FED9E1CC3FA24007D6D1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = B17FED9D1CC3FA24007D6D1B /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -812,6 +843,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ShopSmartAdmin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -824,6 +856,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ShopSmartAdmin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
