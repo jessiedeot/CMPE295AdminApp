@@ -367,8 +367,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zT-K9-I61">
-                                <rect key="frame" x="130" y="525" width="51" height="30"/>
-                                <state key="normal" title="Update"/>
+                                <rect key="frame" x="122" y="525" width="67" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.23137254900000001" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="  Update  ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateSettings:" destination="err-D3-m46" eventType="touchUpInside" id="rWK-0K-PVS"/>
                                 </connections>
